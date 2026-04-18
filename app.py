@@ -5,7 +5,8 @@ os.environ["GOOGLE_API_USE_MTLS_ENDPOINT"] = "never"
 
 # 1. Setup API
 # Secure your key: In a real app, use st.secrets!
-genai.configure(api_key="AIzaSyCkTR8LFYu_jj5FesO31TBXQVC0-5I2kU8")
+
+genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # 2. Page Config
 st.set_page_config(page_title="Optima AI Coach", page_icon="🚀")
